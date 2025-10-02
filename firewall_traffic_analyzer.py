@@ -1,8 +1,8 @@
 # FILE NAME - firewall_traffic_analyzer.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Brayden Thorne
+# DATE: 2025-10-2
+# BRIEF DESCRIPTION:  analyzes firewall
 
 
 
@@ -14,7 +14,32 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+# firewall_traffic_analyzer.py
+# Author: [Your Name]
+# Date: [Today's Date]
+# Description: Analyzes network traffic based on port and transfer size
+#              to detect potential security risks.
 
+print("=== Network Traffic Security Analyzer ===\n")
+
+port_number = int(input("Enter the port number (e.g., 80, 22, 443, 3389): "))
+transfer_size = int(input("Enter the data transfer size in megabytes (MB): "))
+print()
+
+print("FIREWALL LOG:")
+print(f"Port: {port_number}, Transfer Size: {transfer_size} MB")
+
+if port_number in (22, 3389):
+    risk = "HIGH RISK: Potential unauthorized remote access detected!"
+elif port_number == 80 and transfer_size > 100:
+    risk = "MEDIUM RISK: Large unencrypted data transfer detected."
+elif port_number == 443:
+    risk = "LOW RISK: Secure encrypted transfer detected."
+else:
+    risk = "UNKNOWN: Unrecognized traffic pattern."
+
+print(f"Risk Assessment: {risk}")
+print("------------------------")
 
 
 
@@ -92,7 +117,7 @@ Risk Assessment: UNKNOWN: Unrecognized traffic pattern.
 
 
 
-
+yes. ex: if port_number == 22 or 443, it would always succeed incorrectly. The fix was to use in.
 
 
 
