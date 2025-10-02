@@ -14,6 +14,11 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+# firewall_traffic_analyzer.py
+# Author: [Your Name]
+# Date: [Today's Date]
+# Description: Analyzes network traffic based on port and transfer size
+#              to detect potential security risks.
 
 print("=== Network Traffic Security Analyzer ===\n")
 
@@ -35,9 +40,6 @@ else:
 
 print(f"Risk Assessment: {risk}")
 print("------------------------")
-
-
-
 
 
 
